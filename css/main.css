@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url("https://use.typekit.net/jqe3oqd.css");
+
 @font-face {
   font-family: 'Uni sans heavy';
   font-style: normal;
@@ -22,7 +23,9 @@ header {
   padding: 69px 0px 36px 0px;
   text-align: center;
   font-size: 42px;
-  font-family: Uni sans heavy;
+  font-family: cairo, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   letter-spacing: 0.05em;
 }
 br {
@@ -30,7 +33,9 @@ br {
 }
 span {
   font-weight: 100;
-  font-family: Uni sans thins;
+  font-family: cairo, sans-serif;
+  font-weight: 200;
+  font-style: normal;
 }
 .main {
   padding: 106px 20px 60px 20px;
