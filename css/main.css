@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url("https://use.typekit.net/jqe3oqd.css");
+@font-face {
+  font-family: 'Uni sans heavy';
+  font-style: normal;
+  src: url('/font/UniSansDemo-HeavyCAPS.otf');
+}
+@font-face {
+  font-family: 'Uni sans thins';
+  font-style: normal;
+  src: url('/font/UniSansDemo-ThinCAPS.otf');
+}
+
+body {
+  background-color:#1D1D1D;
+  color: white;
+}
+header {
+  background-color: black;
+  padding: 69px 0px 36px 0px;
+  text-align: center;
+  font-size: 42px;
+  font-family: Uni sans heavy;
+  letter-spacing: 0.05em;
+}
+br {
+  display: none;
+}
+span {
+  font-weight: 100;
+  font-family: Uni sans thins;
+}
+.main {
+  padding: 106px 20px 60px 20px;
+  font-family: aileron, sans-serif;
+}
+/* テキスト編集 */
+.form-area {
+  display: block;
+  letter-spacing: 0.045em;
+}
+.changetext {
+  max-width: 1020px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 76.3px;
+}
+.titlearea, .subtitlearea {
+  padding: 40px 86px 41px 49px;
+  background-color: #313133;
+  border-radius: 9px;
+}
+.titlearea {
+  margin-right: 15px;
+}
+
+.contents {
+  display: flex;
+}
+.contents > h2 {
+  font-size: 31px;
+  margin-right: 14px;
+}
+.contents > p {
+  margin: auto 0;
+  height: 17px;
+  font-size: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  color: #858585;
+}
+
+input {
+  margin-top: 21px;
+  background-color: #474747;
+  color: #a7a7a7;
+  border-radius: 9px;
+  height: 44px;
+  font-size: 20px;
+  width: 350px;
+  padding-left: 23px;
+  transition: 0.1s;
+}
+input:focus {
+  outline: none;
+  background-color:#5a5a5a;
+  color: white;
+}
+input:hover {
+  background-color:#505050;
+}
+/* 画像選択 */
+.changeImage {
+  margin: 0 auto;
+  margin-top: 88px;
+  width: 1010px;
+}
+.changeImage > h2 {
+  font-size: 43px;
+}
+.imagebutton {
+  margin-top: 34px;
+  display: flex;
+}
+.imagebtn {
+  display: block;
+}
+.imagebtn img {
+  border-radius: 21px;
+  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.39);
+  transition: 0.25s;
+}
+.imagebtn img:hover {
+  transform: translateY(-5px);
+}
+.btn1, .btn2 {
+  margin-right: 55px;
+}
+
+/* ダウンロード */
+.download-area {
+  margin-top: 90px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.15em;
+}
+.downloadbtn {
+  margin: 0 auto;
+  padding: 22px 55px 21px 55px;
+  display: inline-block;
+  background-color: #2E2FF3;
+  border-radius: 39px;
+  transition: 0.27s;
+}
+.downloadbtn:hover {
+  background: white;
+  color: black;
+}
+.resetbtn {
+  display: inline-block;
+  margin-left: 32px;
+  padding: 19px 38px;
+  border-radius: 39px;
+  border: 2px solid white;
+  transition: 0.2s;
+}
+.resetbtn:hover {
+  background-color: white;
+  color: black;
+}
+.guidetext {
+  margin-top: 35px;
+  font-size: 17px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: white;
+}
+.result-area {
+  margin-top: 76px;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+footer {
+  background-color: black;
+  height: 120px;
+}
+

@@ -1,0 +1,73 @@
+header {
+  text-align: left;
+  padding: 40px 0px 30px 30px;
+  line-height: 1.10;
+}
+br {
+  display: block;
+}
+.titlearea, .subtitlearea {
+  padding: 35px;
+  padding-left: 30px;
+}
+.main {
+  padding-top: 60px;
+}
+.changetext {
+  margin-top: 50px;
+}
+
+.contents > h2 {
+  font-size: 28px;
+  margin-right: 12px;
+}
+.contents > p {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+input {
+  max-width: 90%;
+  margin-top: 15px;
+}
+.changeImage {
+  max-width: 100%;
+  text-align: center;
+}
+.changeImage > h2 {
+  font-size: 40px;
+}
+.imagebutton {
+  margin-top: 35px;
+  display: inline-block;
+}
+.imagebtn {
+  margin-right: 0px;
+}
+.btn2 {
+  margin-top: 55px;
+}
+.download-area {
+  margin-top: 70px;
+  letter-spacing: 0.1em;
+  font-size: 17px;
+}
+.downloadbtn {
+  width: 180px;
+  margin: 0 auto;
+  padding: 19px 37px 17px 37px;
+  display: block;
+  background-color: #2E2FF3;
+  border-radius: 39px;
+}
+.resetbtn {
+  margin-top: 25px;
+  margin-left: 0px;
+  padding: 17px 35px 15px 35px;
+}
+
+.guidetext {
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 30px;
+}

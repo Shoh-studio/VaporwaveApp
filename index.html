@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-pad.css" media="screen and (max-width:959px)">
+  <link rel="stylesheet" href="css/main-mobile.css" media="screen and (max-width:559px)">
+  
+  <title>Vaporwave Header Generator - Shoh</title>
+</head>
+<body>
+  <header>
+    <p>VAPORWAVE<br> HEADER<br> <span>GENERATOR</span></p>
+  </header>
+  <div class="main" id="app">
+    <div id="main-area">
+      <div id="previewImage" class="image-area">
+        <img class="mainImage" v-bind:src="img">
+        <div class="textbox" v-bind:class="border">
+          {{ writetext }}
+        </div>
+        <div class="subtextbox">
+          {{ writesubtext }}
+        </div>
+        <div class="border"></div>
+      </div>
+    </div>  
+    <div class="form-area">
+      <div class="changetext">
+        <div class="titlearea">
+          <div class="contents">
+            <h2>Title</h2>
+            <p>※最大15文字まで。</p>
+          </div>
+          <input maxlength="15" type="text" v-model="writetext">
+        </div>
+        <div class="subtitlearea">
+          <div class="contents">
+            <h2>Subtitle</h2>
+            <p>※最大20文字まで。</p>
+          </div>
+          <input maxlength="20" type="text" v-model="writesubtext">
+        </div>
+      </div>
+      <div class="changeImage">
+        <h2>Background</h2>
+        <div class="imagebutton">
+          <a href="#" class="btn1 imagebtn" v-on:click="choose01">
+            <img src="img/交差 5.png" alt="">
+          </a>
+          <a href="#" class=" btn2 imagebtn" v-on:click="choose02"><img src="img/交差 7.png" alt=""></a>
+          <a href="#" class="btn3 imagebtn" v-on:click="choose03"><img src="img/交差 6.png" alt=""></a>
+        </div> 
+      </div>      
+    </div>
+    <div class="download-area">
+      <a href="#" class="btn downloadbtn" v-on:click="download">GENERATE IMAGE</a>
+      <a href="#" class="btn resetbtn" v-on:click="resetclass">RESET</a>
+      <div class="guidetext">
+        <p>※画像はこの下に生成されます。</p>
+      </div>
+    </div>
+    <div class="result-area">
+      <transition name="generateanime">
+        <img id="canvasImage" src="" alt="">
+      </transition>
+    </div>
+  </div>
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-alpha.12/dist/html2canvas.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
